@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CorrectMe
 This Project contains two API one is auto-corrections and other is autosuggestions.
 Auto-correction build with the help of text blob library and other one is auto-suggestions with the help of transforms and Bart large model.
@@ -73,3 +74,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Hat tip to anyone who’s code was used
 * Inspiration
+=======
+# Auto-Correction-and-Auto-Completion-of-Text
+>>>>>>> c4d777a50ed8f6c1b50992296622744acf1b5825
