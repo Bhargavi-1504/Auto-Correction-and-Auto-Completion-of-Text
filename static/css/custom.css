@@ -1,0 +1,97 @@
+/* Apply a WhatsApp-like background with small images */
+body {
+    background: url('https://cdn.wallpapersafari.com/4/11/WofyVJ.png'); /* Replace with any WhatsApp-like background */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Autocomplete box */
+#autocomplete {
+    opacity: 0.8;
+    background: transparent;
+    position: absolute;
+    box-sizing: border-box;
+    cursor: text;
+    pointer-events: none;
+    color: black;
+    width: 421px;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Input field styling */
+#msg_input {
+    background: #fff;
+    color: black;
+    opacity: 1;
+    width: calc(100% - 40px);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover and Focus Effect */
+#msg_input:focus {
+    border-color: #25D366;  /* WhatsApp green */
+    box-shadow: 0 0 5px rgba(37, 211, 102, 0.5);
+}
+
+/* Placeholder text */
+[data-placeholder]:empty:before {
+    content: attr(data-placeholder);
+    color: #888;
+    font-style: italic;
+}
+
+/* Chat bubble area */
+.test {
+    background: #fff;
+    color: black;
+    opacity: 1;
+    width: calc(100% - 40px);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 100px;
+    padding: 12px;
+    font-size: 16px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Larger text input */
+.text {
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* Heading Style */
+.top_heading {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    background: #128C7E; /* WhatsApp green */
+    padding: 15px;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Editable content */
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-placeholder);
+    color: #888;
+    font-style: italic;
+}
+
+/* Improve padding for editable fields */
+[contenteditable] {
+    padding: 12px;
+    border-radius: 5px;
+}
